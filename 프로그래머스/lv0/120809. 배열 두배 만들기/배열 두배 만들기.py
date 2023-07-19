@@ -1,5 +1,6 @@
 def solution(numbers):
-    newarr = []
+    newArr=[]
     for i in numbers:
-        newarr.append(i*2)
-    return newarr
+        i*=2
+        newArr.append(i)
+    return newArr
