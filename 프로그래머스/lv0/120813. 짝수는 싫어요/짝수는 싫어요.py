@@ -1,2 +1,7 @@
 def solution(n):
-    return list(range(1,n+1,2))
+    i=-1
+    arr=[]
+    while i<=n-2:
+        i+=2
+        arr.append(i)
+    return arr
