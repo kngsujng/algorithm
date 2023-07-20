@@ -1,2 +1,4 @@
 def solution(my_string):
-    return my_string[::-1]
+    arr = list(my_string)
+    arr.reverse()
+    return ''.join(arr)
