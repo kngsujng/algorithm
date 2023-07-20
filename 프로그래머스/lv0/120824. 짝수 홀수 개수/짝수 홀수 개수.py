@@ -1,9 +1,9 @@
 def solution(num_list):
-    odd = 0
-    even = 0
+    oddArr=[]
+    evenArr=[]
     for i in num_list:
-        if i % 2 == 0:
-            even += 1
+        if i%2==1:
+            oddArr.append(i)
         else:
-            odd += 1
-    return [even, odd]            
+            evenArr.append(i)
+    return [len(evenArr), len(oddArr)]
