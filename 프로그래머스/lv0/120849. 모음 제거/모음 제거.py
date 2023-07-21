@@ -1,4 +1,6 @@
 def solution(my_string):
-    aeiou = "aeiou"
-    arr = [i for i in my_string if aeiou.find(i) == -1]
-    return ''.join(arr)
+    vowel='aeiou'
+    for i in my_string:
+        if i in vowel:
+            my_string = my_string.replace(i, '')
+    return my_string
