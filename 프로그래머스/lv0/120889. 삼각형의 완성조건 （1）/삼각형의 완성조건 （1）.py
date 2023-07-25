@@ -1,6 +1,5 @@
 def solution(sides):
-    sides.sort(reverse=True)
-    if sides[0] < sides[1] + sides[2]:
+    if max(sides) < sum(sides)-max(sides):
         return 1
-    else: 
+    else:
         return 2
