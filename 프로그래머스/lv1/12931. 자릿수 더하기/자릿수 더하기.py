@@ -1,5 +1,4 @@
-def solution(n):
-    arr = map(int, str(n))
-    answer = sum(arr)
-
-    return answer
+def solution(N):
+    arr = list(str(N))
+    return sum([int(i) for i in arr])
+    
