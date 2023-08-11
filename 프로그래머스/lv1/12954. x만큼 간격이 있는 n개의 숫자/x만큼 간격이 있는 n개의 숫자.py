@@ -1,11 +1,7 @@
 def solution(x, n):
-    arr=[]
-    if x>0:
-        for i in range(x, n*x+1, x):
-            arr.append(i) 
-    elif x<0:
-        for i in range(x, n*x-1, x):
-            arr.append(i) 
-    else:
-         return [0]*n  
-    return arr
+    if x<0:
+        return [i for i in range(x, x*n-1, x)]
+    elif x==0:
+        return [0]*n
+    return [i for i in range(x, x*n+1, x)]
+        
