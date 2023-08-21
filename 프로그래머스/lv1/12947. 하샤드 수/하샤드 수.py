@@ -1,6 +1,2 @@
 def solution(x):
-    arr = [int(i) for i in str(x)]
-    if x % sum(arr) == 0 :
-        return True
-    else: 
-        return False
+    return x%sum([int(i) for i in str(x)])==0
