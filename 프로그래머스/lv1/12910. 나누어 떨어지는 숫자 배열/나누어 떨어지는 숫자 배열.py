@@ -1,6 +1,5 @@
 def solution(arr, divisor):
-    arr = [i for i in arr if i%divisor==0]
-    arr.sort()
-    if len(arr)==0:
-        arr=[-1]
-    return arr
+    answer = [i for i in arr if i%divisor==0]
+    if len(answer)==0:
+        return [-1]
+    return sorted(answer)
