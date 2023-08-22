@@ -1,6 +1,2 @@
 def solution(numbers):
-    arr=[]
-    for i in range(0,10):
-        if i not in numbers:
-            arr.append(i)
-    return sum(arr)
+    return sum([0,1,2,3,4,5,6,7,8,9]) - sum(numbers)
